@@ -123,6 +123,10 @@ function addMapControl(){
     map.addControl(overviewControl);
 }
 
-if(document.location.href.split('?step=')!=undefined){
+if(document.location.href.split('?step=')[1]!=undefined){
+    $('.step').hide();
     $('.step'+document.location.href.split('?step=')[1]).show();
+}
+else{
+    $('.step0').show();
 }
