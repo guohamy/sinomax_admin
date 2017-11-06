@@ -62,6 +62,10 @@ $('.status li').on('click',function () {
             $('.item').hide();
             $('.binding').parent().show();
             break;
+        case 4:
+            $('.item').hide();
+            $('.payed').parent().show();
+            break;
 
     }
 });
@@ -123,6 +127,10 @@ function addMapControl(){
     map.addControl(overviewControl);
 }
 
+
+/*
+ * 上线删除以下代码
+ */
 if(document.location.href.split('?step=')[1]!=undefined){
     $('.step').hide();
     $('.step'+document.location.href.split('?step=')[1]).show();
@@ -130,3 +138,6 @@ if(document.location.href.split('?step=')[1]!=undefined){
 else{
     $('.step0').show();
 }
+/*
+ * 上线删除以上代码
+ */
