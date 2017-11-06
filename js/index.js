@@ -91,6 +91,12 @@ $('.plus').on('click',function () {
     $(this).prev('input').trigger('click');
 });
 
+/*
+ * 选择种类
+ */
+$('.kind .ddl i').on('click',function () {
+   $('.kind b').text($(this).text());
+});
 
 var map;
 function initMap(id){
