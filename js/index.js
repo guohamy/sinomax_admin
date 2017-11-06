@@ -62,6 +62,10 @@ $('.status li').on('click',function () {
             $('.item').hide();
             $('.binding').parent().show();
             break;
+        case 4:
+            $('.item').hide();
+            $('.payed').parent().show();
+            break;
 
     }
 });

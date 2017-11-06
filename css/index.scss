@@ -1784,6 +1784,44 @@ nav {
   }
 }
 
+.sButton {
+  display: block;
+  width: 134px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 auto;
+
+  &.blue {
+    background-color: #41bce9;
+
+    &:hover {
+      background-color: #28acdd;
+    }
+
+  }
+
+  &.green {
+    background-color: #2acda8;
+
+    &:hover {
+      background-color: #03be94;
+    }
+  }
+
+  &.orange {
+    background-color: #ff773c;
+
+    &:hover {
+      background-color: #ff6624;
+    }
+
+  }
+}
+
 @media screen and (max-width: 1280px) {
   .whole.list .body {
     padding: 10px;
@@ -1794,7 +1832,7 @@ nav {
   }
 }
 
-.modile {
+.mobile {
   display: none !important;
 }
 
@@ -1804,13 +1842,28 @@ nav {
     display: none !important;
   }
 
-  .modile {
+  .mobile {
     display: inherit !important;
   }
 
   .gButton {
+    border-radius: 4px;
     line-height: 38px;
     font-size: 12px;
+
+    &.orange {
+      background-color: #ff773c;
+      color: #fff;
+    }
+
+    &.green {
+      background-color: #2acda8;
+      color: #fff;
+    }
+
+    span {
+      display: none !important;
+    }
   }
 
   .status {
@@ -1900,8 +1953,12 @@ nav {
       }
     }
 
-    &._3-2 .body {
-      width: 100%;
+    &._3-2 {
+      min-height: 373px;
+
+      .body {
+        width: 100%;
+      }
     }
 
     &.list {

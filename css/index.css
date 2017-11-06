@@ -1464,24 +1464,56 @@ nav {
     .gButton.b4:hover span {
       background-image: url(../images/arraw-round-right-green-hover.png); }
 
+.sButton {
+  display: block;
+  width: 134px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 auto; }
+  .sButton.blue {
+    background-color: #41bce9; }
+    .sButton.blue:hover {
+      background-color: #28acdd; }
+  .sButton.green {
+    background-color: #2acda8; }
+    .sButton.green:hover {
+      background-color: #03be94; }
+  .sButton.orange {
+    background-color: #ff773c; }
+    .sButton.orange:hover {
+      background-color: #ff6624; }
+
 @media screen and (max-width: 1280px) {
   .whole.list .body {
     padding: 10px; }
     .whole.list .body .items .item {
       width: 33.3333%; } }
-.modile {
+.mobile {
   display: none !important; }
 
 @media screen and (max-width: 540px) {
   .web {
     display: none !important; }
 
-  .modile {
+  .mobile {
     display: inherit !important; }
 
   .gButton {
+    border-radius: 4px;
     line-height: 38px;
     font-size: 12px; }
+    .gButton.orange {
+      background-color: #ff773c;
+      color: #fff; }
+    .gButton.green {
+      background-color: #2acda8;
+      color: #fff; }
+    .gButton span {
+      display: none !important; }
 
   .status {
     margin-right: 0; }
@@ -1541,8 +1573,10 @@ nav {
         margin: 0 5px; }
     .whole._2 .qrcode b {
       display: none; }
-    .whole._3-2 .body {
-      width: 100%; }
+    .whole._3-2 {
+      min-height: 373px; }
+      .whole._3-2 .body {
+        width: 100%; }
     .whole.list {
       padding-bottom: 0;
       justify-content: flex-start !important; }
