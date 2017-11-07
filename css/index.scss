@@ -2402,6 +2402,10 @@ nav {
                 }
               }
             }
+
+            .step8 {
+              margin-top: 0 !important;
+            }
           }
         }
       }
@@ -2533,10 +2537,37 @@ nav {
   }
 
   h2, h3, h4 {
-    font-size: 16px !important;
-    line-height: 24px !important;
+    font-size: 15px !important;
+    line-height: 26px !important;
     font-weight: bold !important;
     color: #222 !important;
+    margin: 10px 0 18px !important;
+  }
+
+  p {
+    font-size: 12px !important;
+    line-height: 18px !important;
+    margin: 10px 0 20px !important;
+
+    strong {
+      font-size: 18px !important;
+      padding: 0 10px !important;
+    }
+
+    a {
+      display: block;
+      background-color: #2acda8;
+      color: #fff !important;
+      line-height: 28px;
+      border-radius: 4px;
+      width: 128px;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  .mb40 {
+    margin-bottom: 20px !important;
   }
 
   .main {

@@ -1857,6 +1857,8 @@ nav {
               margin-bottom: 10px; }
               .whole._5 .items .body section ul li:last-child {
                 margin-bottom: 0; }
+          .whole._5 .items .body section .step8 {
+            margin-top: 0 !important; }
     .whole._6-1 {
       padding: 0 10px;
       margin-top: 10px; }
@@ -1926,10 +1928,31 @@ nav {
     box-shadow: none; }
 
   h2, h3, h4 {
-    font-size: 16px !important;
-    line-height: 24px !important;
+    font-size: 15px !important;
+    line-height: 26px !important;
     font-weight: bold !important;
-    color: #222 !important; }
+    color: #222 !important;
+    margin: 10px 0 18px !important; }
+
+  p {
+    font-size: 12px !important;
+    line-height: 18px !important;
+    margin: 10px 0 20px !important; }
+    p strong {
+      font-size: 18px !important;
+      padding: 0 10px !important; }
+    p a {
+      display: block;
+      background-color: #2acda8;
+      color: #fff !important;
+      line-height: 28px;
+      border-radius: 4px;
+      width: 128px;
+      text-align: center;
+      margin: 0 auto; }
+
+  .mb40 {
+    margin-bottom: 20px !important; }
 
   .main {
     flex-direction: column; }
