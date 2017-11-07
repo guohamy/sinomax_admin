@@ -1820,125 +1820,132 @@ nav {
             background-position: right center;
             background-repeat: no-repeat; }
 
-  .whole {
-    padding-bottom: 20px; }
-    .whole._1-1 {
-      padding-top: 48px; }
-      .whole._1-1 ul li {
-        margin: 0 5px; }
-    .whole._2 .qrcode b {
-      display: none; }
-    .whole._3-2 {
-      min-height: 373px; }
-      .whole._3-2 .body {
-        width: 100%; }
-    .whole._5 {
-      min-height: 0 !important; }
-      .whole._5 .items {
-        flex-grow: 1;
-        padding: 40px 10px 0; }
-        .whole._5 .items .body header {
-          height: 8px; }
-          .whole._5 .items .body header i {
-            width: 36px;
-            height: 36px;
-            border: 3px #e2e2e2 solid;
-            font-size: 18px;
-            line-height: 30px; }
-            .whole._5 .items .body header i:after {
-              width: 30px;
-              height: 30px; }
-            .whole._5 .items .body header i:before {
-              top: 42px; }
-            .whole._5 .items .body header i:nth-child(1) {
-              left: 14%; }
-            .whole._5 .items .body header i:nth-child(2) {
-              left: 38%; }
-            .whole._5 .items .body header i:nth-child(3) {
-              left: 62%; }
-            .whole._5 .items .body header i:nth-child(4) {
-              left: 86%; }
-        .whole._5 .items .body section {
-          justify-content: flex-start; }
-          .whole._5 .items .body section .middle {
-            width: auto; }
-          .whole._5 .items .body section .check.check2 .item {
-            width: 100%;
-            padding: 0 0 10px; }
-          .whole._5 .items .body section ul {
-            width: 200px !important;
-            margin-left: auto !important;
-            margin-right: auto !important;
-            flex-direction: column; }
-            .whole._5 .items .body section ul li {
-              width: 100%;
-              padding: 0;
-              margin-bottom: 10px; }
-              .whole._5 .items .body section ul li:last-child {
-                margin-bottom: 0; }
-          .whole._5 .items .body section .step8, .whole._5 .items .body section .step11 {
-            margin-top: 0 !important; }
-    .whole._6-1 {
-      padding: 0 10px;
-      margin-top: 10px; }
-      .whole._6-1 .header {
-        display: block;
-        height: auto;
-        margin-bottom: 10px;
-        border-radius: 5px;
-        padding: 0 20px; }
-        .whole._6-1 .header div {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          line-height: 24px;
-          padding: 10px 0; }
-          .whole._6-1 .header div:nth-child(1) {
-            border-bottom: 1px #ccc dashed; }
-          .whole._6-1 .header div b {
-            font-size: 14px; }
-          .whole._6-1 .header div strong {
-            font-size: 18px;
-            margin: 0 12px; }
-          .whole._6-1 .header div span {
-            font-size: 12px; }
-      .whole._6-1 .table {
-        line-height: 24px; }
-        .whole._6-1 .table th {
-          font-size: 14px;
-          padding: 4px 5px; }
-        .whole._6-1 .table td {
-          font-size: 12px;
-          padding: 4px 5px; }
-    .whole._6-2 .body {
+  .whole._1-1 {
+    padding-top: 48px; }
+    .whole._1-1 ul li {
+      margin: 0 5px; }
+  .whole._2 .qrcode b {
+    display: none; }
+  .whole._3-2 {
+    min-height: 373px; }
+    .whole._3-2 .body {
       width: 100%; }
-      .whole._6-2 .body ul li div {
-        width: 10px;
-        flex-grow: 1;
-        display: flex; }
-    .whole._7 .body {
-      padding: 0 10px; }
-      .whole._7 .body .bottom {
-        margin: 20px 0; }
-    .whole.list {
-      padding-bottom: 0;
-      justify-content: flex-start !important; }
-      .whole.list .body {
-        width: 100%; }
-        .whole.list .body .header {
-          margin-bottom: 10px; }
-        .whole.list .body .items {
+  .whole._5 {
+    min-height: 0 !important; }
+    .whole._5 .items {
+      flex-grow: 1;
+      padding: 40px 10px 0; }
+      .whole._5 .items .body header {
+        height: 8px; }
+        .whole._5 .items .body header i {
+          width: 36px;
+          height: 36px;
+          border: 3px #e2e2e2 solid;
+          font-size: 18px;
+          line-height: 30px; }
+          .whole._5 .items .body header i:after {
+            width: 30px;
+            height: 30px; }
+          .whole._5 .items .body header i:before {
+            top: 42px; }
+          .whole._5 .items .body header i:nth-child(1) {
+            left: 14%; }
+          .whole._5 .items .body header i:nth-child(2) {
+            left: 38%; }
+          .whole._5 .items .body header i:nth-child(3) {
+            left: 62%; }
+          .whole._5 .items .body header i:nth-child(4) {
+            left: 86%; }
+      .whole._5 .items .body section {
+        justify-content: flex-start; }
+        .whole._5 .items .body section .middle {
+          width: auto; }
+        .whole._5 .items .body section .check.check2 .item {
           width: 100%;
-          margin-left: 0; }
-          .whole.list .body .items .item {
+          padding: 0 0 10px; }
+        .whole._5 .items .body section ul {
+          width: 200px !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          flex-direction: column; }
+          .whole._5 .items .body section ul li {
             width: 100%;
-            padding: 0 0 10px 0; }
-            .whole.list .body .items .item:last-child {
-              padding: 0; }
-    .whole .items {
+            padding: 0;
+            margin-bottom: 10px; }
+            .whole._5 .items .body section ul li:last-child {
+              margin-bottom: 0; }
+        .whole._5 .items .body section .step0, .whole._5 .items .body section .step1, .whole._5 .items .body section .step2, .whole._5 .items .body section .step3, .whole._5 .items .body section .step4, .whole._5 .items .body section .step5, .whole._5 .items .body section .step8, .whole._5 .items .body section .step9, .whole._5 .items .body section .step10 {
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+          justify-content: center; }
+        .whole._5 .items .body section .step8 > div {
+          width: 100%; }
+        .whole._5 .items .body section .step8, .whole._5 .items .body section .step11 {
+          margin-top: 0 !important; }
+  .whole._6-1 {
+    padding: 0 10px;
+    margin-top: 10px; }
+    .whole._6-1 .header {
+      display: block;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      padding: 0 20px; }
+      .whole._6-1 .header div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 24px;
+        padding: 10px 0; }
+        .whole._6-1 .header div:nth-child(1) {
+          border-bottom: 1px #ccc dashed; }
+        .whole._6-1 .header div b {
+          font-size: 14px; }
+        .whole._6-1 .header div strong {
+          font-size: 18px;
+          margin: 0 12px; }
+        .whole._6-1 .header div span {
+          font-size: 12px; }
+    .whole._6-1 .table {
+      line-height: 24px; }
+      .whole._6-1 .table th {
+        font-size: 14px;
+        padding: 4px 5px; }
+      .whole._6-1 .table td {
+        font-size: 12px;
+        padding: 4px 5px; }
+  .whole._6-2 .body {
+    width: 100%; }
+    .whole._6-2 .body ul li div {
+      width: 10px;
+      flex-grow: 1;
+      display: flex; }
+  .whole._7 .body {
+    padding: 0 10px; }
+    .whole._7 .body .bottom {
+      margin: 20px 0; }
+  .whole.list {
+    padding-bottom: 0;
+    justify-content: flex-start !important; }
+    .whole.list .body {
       width: 100%; }
-      .whole .items.max {
-        width: 100%; }
+      .whole.list .body .header {
+        margin-bottom: 10px; }
+      .whole.list .body .items {
+        width: 100%;
+        margin-left: 0; }
+        .whole.list .body .items .item {
+          width: 100%;
+          padding: 0 0 10px 0; }
+          .whole.list .body .items .item:last-child {
+            padding: 0; }
+  .whole .items {
+    width: 100%; }
+    .whole .items.max {
+      width: 100%; }
 
   .box {
     width: auto;
