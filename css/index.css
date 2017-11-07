@@ -1457,6 +1457,7 @@ nav {
               transform: translateY(-50%); }
           .whole._7 .body ul li p {
             font-size: 14px;
+            margin: 0 !important;
             color: #333333; }
             .whole._7 .body ul li p i {
               display: inline-block;
