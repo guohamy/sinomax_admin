@@ -2269,7 +2269,7 @@ nav {
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
 
     &.active {
       background-image: url(../images/menu_active.png);
@@ -2617,12 +2617,13 @@ nav {
 
         .logo {
           position: absolute;
-          left: 0;
+          left: 50%;
           top: 0;
+          transform: translateX(-50%);
           width: 48px;
           height: 48px;
           background-image: url(../images/icon.png);
-          background-position: 10px center;
+          background-position: center center;
           background-repeat: no-repeat;
           background-size: 36px auto;
           margin-bottom: 0;
@@ -2677,12 +2678,27 @@ nav {
 
       .nav {
         justify-content: center;
+        position: fixed;
+        z-index: 11;
+        top: 0;
+        right: 0;
+        height: 48px;
+        border-bottom: none;
 
         ul {
-          padding-right: 15px;
+          padding-right: 0;
 
           li {
             margin-left: 15px;
+
+            &.ddl span {
+              line-height: 48px;
+              padding: 0 32px 0 40px;
+            }
+
+            &:nth-child(1), &:nth-child(2) {
+              display: none;
+            }
           }
         }
       }
