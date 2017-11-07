@@ -299,7 +299,7 @@ nav {
               transform: translateY(-50%);
             }
 
-            &:hover {
+            &.current, &:hover {
               background-color: #dddddd;
 
               &:after {
@@ -1033,22 +1033,22 @@ nav {
             color: #fff;
             position: absolute;
             top: 50%;
-            transform: translateY(-50%);
+            transform: translate(-50%,-50%);
 
             &:nth-child(1).active {
-              background-image: linear-gradient(to top, #99ca4d, #c4ee6e);
+              background-image: linear-gradient(to bottom, #99ca4d, #c4ee6e);
             }
 
             &:nth-child(2).active {
-              background-image: linear-gradient(to top, #ffbe34, #ffd66a);
+              background-image: linear-gradient(to bottom, #ffbe34, #ffd66a);
             }
 
             &:nth-child(3).active {
-              background-image: linear-gradient(to top, #00aeff, #7ae5fc);
+              background-image: linear-gradient(to bottom, #00aeff, #7ae5fc);
             }
 
             &:nth-child(4).active {
-              background-image: linear-gradient(to top, #60f2f9, #19acb0);
+              background-image: linear-gradient(to bottom, #60f2f9, #19acb0);
             }
 
             &:after {
@@ -1078,19 +1078,19 @@ nav {
             }
 
             &:nth-child(1) {
-              left: 5.04%;
+              left: 8%;
             }
 
             &:nth-child(2) {
-              left: 33.2%;
+              left: 36%;
             }
 
             &:nth-child(3) {
-              right: 33.2%;
+              left: 64%;
             }
 
             &:nth-child(4) {
-              right: 5.04%;
+              left: 92%;
             }
           }
         }
@@ -2084,6 +2084,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   border-radius: 6px;
   line-height: 42px;
   font-size: 14px;
@@ -2358,14 +2359,38 @@ nav {
         .body {
 
           header {
+            height: 8px;
 
             i {
+              width: 36px;
+              height: 36px;
+              border: 3px #e2e2e2 solid;
+              font-size: 18px;
+              line-height: 30px;
+
+              &:after {
+                width: 30px;
+                height: 30px;
+              }
+
+              &:before {
+                top: 42px;
+              }
+
+              &:nth-child(1) {
+                left: 14%;
+              }
+
               &:nth-child(2) {
-                left: 28%;
+                left: 38%;
               }
 
               &:nth-child(3) {
-                right: 28%;
+                left: 62%;
+              }
+
+              &:nth-child(4) {
+                left: 86%;
               }
             }
           }
@@ -2404,7 +2429,7 @@ nav {
               }
             }
 
-            .step8 {
+            .step8, .step11 {
               margin-top: 0 !important;
             }
           }
@@ -2608,7 +2633,6 @@ nav {
           display: none;
 
           li {
-            padding: 0 20px;
             margin: 0;
             border-bottom: 1px #e5e5e5 solid;
 
@@ -2619,9 +2643,14 @@ nav {
             a {
               justify-content: flex-start;
               line-height: 44px;
+              padding: 0 20px;
+
+              &.current, &:hover {
+                background-color: #f8f8f8;
+              }
 
               &:before {
-                right: 0;
+                right: 20px;
               }
 
               span {
@@ -2675,12 +2704,20 @@ nav {
   }
 }
 
-@media screen and (max-height: 653px) {
+@media screen and (max-height: 768px) {
   .whole._5 .items .body section {
-    justify-content: flex-start;
-
     .step8 {
       margin-top: 100px;
     }
+
+    .step11 {
+      margin-top: 100px;
+    }
+  }
+}
+
+@media screen and (max-height: 540px) {
+  .whole._5 .items .body section {
+    justify-content: flex-start;
   }
 }
