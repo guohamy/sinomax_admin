@@ -208,6 +208,9 @@ nav {
     width: 18.75%;
     min-width: 260px;
     background-color: #eee;
+    background-image: url(../images/sidebg.jpg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
     border-right: 1px #cccccc solid;
     display: flex;
     flex-direction: column;
@@ -387,11 +390,14 @@ nav {
     }
   }
 
-  section {
+  > section {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
     background-color: #f8f8f8;
+    background-image: url(../images/sectionbg.jpg);
+    background-position: bottom left;
+    background-repeat: no-repeat;
 
     .nav {
       flex-shrink: 0;

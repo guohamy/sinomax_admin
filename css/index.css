@@ -414,6 +414,9 @@ nav {
     width: 18.75%;
     min-width: 260px;
     background-color: #eee;
+    background-image: url(../images/sidebg.jpg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
     border-right: 1px #cccccc solid;
     display: flex;
     flex-direction: column;
@@ -526,33 +529,36 @@ nav {
           background-repeat: no-repeat; }
           .main aside .bottom .packUpBtn span.n5 {
             background-image: url(../images/nav-packUp.png); }
-  .main section {
+  .main > section {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    background-color: #f8f8f8; }
-    .main section .nav {
+    background-color: #f8f8f8;
+    background-image: url(../images/sectionbg.jpg);
+    background-position: bottom left;
+    background-repeat: no-repeat; }
+    .main > section .nav {
       flex-shrink: 0;
       height: 60px;
       border-bottom: 1px #ccc solid;
       display: flex;
       justify-content: flex-end;
       background-color: #fff; }
-      .main section .nav ul {
+      .main > section .nav ul {
         display: flex;
         padding-right: 36px; }
-        .main section .nav ul li {
+        .main > section .nav ul li {
           position: relative;
           margin-left: 36px; }
-          .main section .nav ul li > a, .main section .nav ul li span {
+          .main > section .nav ul li > a, .main > section .nav ul li span {
             font-size: 14px;
             color: #666666;
             display: block;
             line-height: 60px;
             cursor: pointer; }
-            .main section .nav ul li > a:hover, .main section .nav ul li span:hover {
+            .main > section .nav ul li > a:hover, .main > section .nav ul li span:hover {
               color: #fe4778; }
-            .main section .nav ul li > a:hover:before, .main section .nav ul li span:hover:before {
+            .main > section .nav ul li > a:hover:before, .main > section .nav ul li span:hover:before {
               content: '';
               width: 100%;
               height: 1px;
@@ -562,17 +568,17 @@ nav {
               position: absolute;
               left: 0;
               bottom: 0; }
-          .main section .nav ul li.ddl span {
+          .main > section .nav ul li.ddl span {
             display: block;
             padding: 0 36px 0 44px;
             background-image: url(../images/user.png);
             background-position: 13px center;
             background-repeat: no-repeat;
             position: relative; }
-            .main section .nav ul li.ddl span:hover:after {
+            .main > section .nav ul li.ddl span:hover:after {
               border-bottom: none;
               border-top: 7px solid #fe4778; }
-            .main section .nav ul li.ddl span:after {
+            .main > section .nav ul li.ddl span:after {
               content: '';
               width: 0;
               height: 0;
@@ -583,55 +589,55 @@ nav {
               right: 13px;
               top: 50%;
               transform: translateY(-50%); }
-          .main section .nav ul li.ddl:hover dl {
+          .main > section .nav ul li.ddl:hover dl {
             display: block; }
-          .main section .nav ul li.ddl dl {
+          .main > section .nav ul li.ddl dl {
             position: absolute;
             width: 110px;
             line-height: 44px;
             background-color: #eee;
             display: none;
             z-index: 100001; }
-            .main section .nav ul li.ddl dl dt {
+            .main > section .nav ul li.ddl dl dt {
               border-bottom: 1px #ccc solid; }
-              .main section .nav ul li.ddl dl dt:last-child {
+              .main > section .nav ul li.ddl dl dt:last-child {
                 border-bottom: none; }
-              .main section .nav ul li.ddl dl dt a {
+              .main > section .nav ul li.ddl dl dt a {
                 color: #666;
                 display: block;
                 text-align: center; }
-                .main section .nav ul li.ddl dl dt a:hover {
+                .main > section .nav ul li.ddl dl dt a:hover {
                   color: #fe4778; }
-    .main section .content {
+    .main > section .content {
       display: flex;
       flex-grow: 1; }
-      .main section .content .center {
+      .main > section .content .center {
         display: flex;
         flex-grow: 1;
         align-items: center;
         justify-content: center; }
-        .main section .content .center .none h3 {
+        .main > section .content .center .none h3 {
           font-weight: normal;
           font-size: 30px;
           line-height: 48px;
           color: #666666;
           text-align: center;
           margin-bottom: 36px; }
-        .main section .content .center .none ul {
+        .main > section .content .center .none ul {
           overflow: hidden; }
-          .main section .content .center .none ul li {
+          .main > section .content .center .none ul li {
             width: 144px;
             float: left;
             margin: 0 10px; }
-            .main section .content .center .none ul li:nth-child(1) a {
+            .main > section .content .center .none ul li:nth-child(1) a {
               background-color: #41d8b6; }
-              .main section .content .center .none ul li:nth-child(1) a:hover {
+              .main > section .content .center .none ul li:nth-child(1) a:hover {
                 background-image: linear-gradient(to bottom, #1bc4ba, #47f5ce); }
-            .main section .content .center .none ul li:nth-child(2) a {
+            .main > section .content .center .none ul li:nth-child(2) a {
               background-color: #ff8a57; }
-              .main section .content .center .none ul li:nth-child(2) a:hover {
+              .main > section .content .center .none ul li:nth-child(2) a:hover {
                 background-image: linear-gradient(to bottom, #fc7d45, #f7a370); }
-            .main section .content .center .none ul li a {
+            .main > section .content .center .none ul li a {
               display: flex;
               align-items: center;
               justify-content: center;
@@ -641,14 +647,14 @@ nav {
               font-size: 14px;
               line-height: 26px;
               color: #fff; }
-              .main section .content .center .none ul li a strong {
+              .main > section .content .center .none ul li a strong {
                 font-size: 18px; }
-      .main section .content .normal {
+      .main > section .content .normal {
         display: flex;
         flex-direction: column;
         flex-grow: 1;
         width: 100%; }
-        .main section .content .normal .header {
+        .main > section .content .normal .header {
           display: flex;
           align-items: center;
           flex-shrink: 0;
@@ -656,7 +662,7 @@ nav {
           font-size: 14px;
           color: #666666;
           border-bottom: 10px #eeeeee solid; }
-          .main section .content .normal .header a {
+          .main > section .content .normal .header a {
             width: 144px;
             height: 44px;
             line-height: 44px;
@@ -665,43 +671,43 @@ nav {
             color: #fff;
             border-radius: 6px;
             margin-left: 10px; }
-            .main section .content .normal .header a:nth-child(1) {
+            .main > section .content .normal .header a:nth-child(1) {
               background-color: #41d8b6; }
-              .main section .content .normal .header a:nth-child(1):hover {
+              .main > section .content .normal .header a:nth-child(1):hover {
                 background-image: linear-gradient(to bottom, #1bc4ba, #47f5ce); }
-            .main section .content .normal .header a:nth-child(2) {
+            .main > section .content .normal .header a:nth-child(2) {
               background-color: #ff8a57; }
-              .main section .content .normal .header a:nth-child(2):hover {
+              .main > section .content .normal .header a:nth-child(2):hover {
                 background-image: linear-gradient(to bottom, #fc7d45, #f7a370); }
-        .main section .content .normal .table {
+        .main > section .content .normal .table {
           padding: 20px;
           flex-grow: 1;
           height: 100%;
           overflow: auto; }
-          .main section .content .normal .table th {
+          .main > section .content .normal .table th {
             font-size: 14px;
             font-weight: bold;
             text-align: center;
             line-height: 56px; }
-          .main section .content .normal .table td {
+          .main > section .content .normal .table td {
             text-align: center; }
-            .main section .content .normal .table td a {
+            .main > section .content .normal .table td a {
               display: block;
               line-height: 30px;
               border-radius: 4px;
               width: 74px;
               float: left;
               margin: 0 6px; }
-              .main section .content .normal .table td a:nth-child(1) {
+              .main > section .content .normal .table td a:nth-child(1) {
                 color: #1eb3de;
                 border: 1px #1eb3de solid; }
-                .main section .content .normal .table td a:nth-child(1):hover {
+                .main > section .content .normal .table td a:nth-child(1):hover {
                   background-color: #1eb3de;
                   color: #fff; }
-              .main section .content .normal .table td a:nth-child(2) {
+              .main > section .content .normal .table td a:nth-child(2) {
                 color: #36cf97;
                 border: 1px #36cf97 solid; }
-                .main section .content .normal .table td a:nth-child(2):hover {
+                .main > section .content .normal .table td a:nth-child(2):hover {
                   background-color: #36cf97;
                   color: #fff; }
 
