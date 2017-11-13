@@ -1,8 +1,17 @@
 /**
  * Created by guoha on 2017/10/29.
  */
+if(parseInt(localStorage.packUp) == 1) {
+    $('.main aside').addClass('packUp');
+}
 $('.packUpBtn').on('click',function () {
    $(this).parents('aside').toggleClass('packUp');
+   if($(this).parents('aside').hasClass('packUp')){
+       localStorage.packUp = 1;
+   }
+   else{
+       localStorage.packUp = 0;
+   }
 });
 
 $('.menu').on('click',function () {

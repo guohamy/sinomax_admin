@@ -22,6 +22,10 @@
 </head>
 <body>
 
+<div class="share">
+
+</div>
+
 <div class="main">
     <aside>
         <div class="top">
@@ -71,7 +75,7 @@
                             <img src="./images/wxfk.png" alt="" class="web wxfk-qrcode">
                             <ul class="mobile">
                                 <li><a href="" class="gButton orange">本人支付</a></li>
-                                <li><a href="" class="gButton green">商户支付</a></li>
+                                <li><a class="gButton green oPay">商户支付</a></li>
                             </ul>
                             <p class="web">请使用微信扫码支付</p>
                         </div>
@@ -289,6 +293,14 @@
 <script src="http://api.map.baidu.com/api?v=2.0&ak=GFaBVIZQ6ygklTe51gnSo23xsxltnGq7"></script>
 <script src="./js/index.js"></script>
 <script>
+
+    $('.oPay').on('click',function () {
+        $('.share').show();
+    });
+    $('.share').on('click',function () {
+        $(this).hide();
+    });
+
     initMap('map');
 </script>
 </body>
