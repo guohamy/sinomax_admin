@@ -249,6 +249,12 @@ nav {
       .bottom {
         .packUpBtn {
 
+          &:hover {
+            span.n5 {
+              background-image: url(../images/nav-stretch-hover.png);
+            }
+          }
+
           span {
             text-indent: -9999px;
             width: 0px;
@@ -366,16 +372,10 @@ nav {
         position: relative;
 
         &:hover {
-          background-color: #dddddd;
+          color: #ff4327;
 
-          &:after {
-            content: '';
-            width: 4px;
-            height: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
-            background-color: #ff4327;
+          span.n5 {
+            background-image: url(../images/nav-packUp-hover.png);
           }
         }
 

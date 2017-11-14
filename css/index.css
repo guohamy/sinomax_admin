@@ -435,6 +435,8 @@ nav {
         text-indent: -9999px;
         width: 0;
         padding-left: 24px; }
+      .main aside.packUp .bottom .packUpBtn:hover span.n5 {
+        background-image: url(../images/nav-stretch-hover.png); }
       .main aside.packUp .bottom .packUpBtn span {
         text-indent: -9999px;
         width: 0px;
@@ -516,15 +518,9 @@ nav {
         border-top: 1px #ccc solid;
         position: relative; }
         .main aside .bottom .packUpBtn:hover {
-          background-color: #dddddd; }
-          .main aside .bottom .packUpBtn:hover:after {
-            content: '';
-            width: 4px;
-            height: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
-            background-color: #ff4327; }
+          color: #ff4327; }
+          .main aside .bottom .packUpBtn:hover span.n5 {
+            background-image: url(../images/nav-packUp-hover.png); }
         .main aside .bottom .packUpBtn span {
           padding-left: 20px;
           width: 120px;
