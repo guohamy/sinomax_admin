@@ -1520,7 +1520,7 @@ nav {
         width: 320px; }
         .whole._8 .map-body.stretch .map-side .map-side-control:after {
           transform: scaleX(-1);
-          left: -6px; }
+          left: 0; }
       .whole._8 .map-body.stretch .map-content .map-content-header {
         padding-left: 320px; }
       .whole._8 .map-body .map-side {
@@ -1717,6 +1717,8 @@ nav {
       background-image: url(../images/binding-green.jpg); }
     .whole.list.green .body .items .item .itemC.trying:before {
       background-image: url(../images/trying-green.jpg); }
+    .whole.list.green .body .items .item .itemC.payed:before {
+      background-image: url(../images/payed.jpg); }
   .whole.list .body {
     width: 100%;
     padding: 20px; }

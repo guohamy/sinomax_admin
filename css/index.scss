@@ -2167,6 +2167,10 @@ nav {
       &.trying:before {
         background-image: url(../images/trying-green.jpg);
       }
+
+      &.payed:before {
+        background-image: url(../images/payed.jpg);
+      }
     }
 
     .body {
