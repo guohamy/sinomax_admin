@@ -499,7 +499,18 @@ nav {
             .main aside .top ul li a span.n3 {
               background-image: url(../images/nav-money.png); }
             .main aside .top ul li a span.n4 {
-              background-image: url(../images/nav-notice.png); }
+              background-image: url(../images/nav-notice.png);
+              position: relative; }
+              .main aside .top ul li a span.n4.notice:after {
+                content: '';
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: #ff4327;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%); }
     .main aside .bottom {
       width: 100%;
       height: 440px;
@@ -576,14 +587,14 @@ nav {
             position: relative; }
             .main section .nav ul li.ddl span:hover:after {
               border-bottom: none;
-              border-top: 7px solid #fe4778; }
+              border-bottom: 7px solid #fe4778; }
             .main section .nav ul li.ddl span:after {
               content: '';
               width: 0;
               height: 0;
               border-left: 4px solid transparent;
               border-right: 4px solid transparent;
-              border-bottom: 7px solid #666;
+              border-top: 7px solid #666;
               position: absolute;
               right: 13px;
               top: 50%;
@@ -2182,7 +2193,8 @@ nav {
           .whole.list .body .items .item:last-child {
             padding: 0; }
   .whole .items {
-    width: 100%; }
+    width: 100%;
+    flex-grow: 1; }
     .whole .items.max {
       width: 100%; }
 
@@ -2222,7 +2234,7 @@ nav {
   .main {
     flex-direction: column; }
     .main aside {
-      width: 100%;
+      width: 100% !important;
       flex-shrink: 0;
       padding: 0;
       background-color: #fff;
@@ -2266,7 +2278,10 @@ nav {
                 right: 20px; }
               .main aside .top ul li a span {
                 padding-left: 0;
-                background-image: none !important; }
+                background-image: none !important;
+                text-indent: 0 !important;
+                padding-left: 0 !important;
+                flex-grow: 1; }
       .main aside .bottom {
         display: none; }
     .main > section {
