@@ -19,6 +19,19 @@ $('.menu').on('click',function () {
     $(this).parent().find('ul').toggle();
 });
 
+//复制
+function copy(o){
+    var str = $(o).parent().find('input').val();
+    var save = function(e){
+        e.clipboardData.setData('text/plain', str);
+        e.preventDefault();
+    }
+    document.addEventListener('copy', save);
+    document.execCommand('copy');
+    document.removeEventListener('copy',save);
+    alert('复制成功');
+}
+
 /*
  * 支付方式切换
  */
